@@ -238,6 +238,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d050f8fc9fd74c845a1c76fa482edd70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health_text: {fileID: 1370407868}
 --- !u!4 &693673233 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4795595162369840, guid: 7cb5b775d60df9b44bfcdc16347bf93f,
@@ -307,40 +308,6 @@ Prefab:
       propertyPath: wall
       value: 
       objectReference: {fileID: 693673233}
-    - target: {fileID: 212503790246579720, guid: 65a6985845398684aa22e569615f09da,
-        type: 2}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 900e7ea930b2e9d42ab147e986d0ab3a,
-        type: 3}
-    - target: {fileID: 4084086878130384, guid: 65a6985845398684aa22e569615f09da, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 4084086878130384, guid: 65a6985845398684aa22e569615f09da, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 61143386374277672, guid: 65a6985845398684aa22e569615f09da,
-        type: 2}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1.28
-      objectReference: {fileID: 0}
-    - target: {fileID: 61143386374277672, guid: 65a6985845398684aa22e569615f09da,
-        type: 2}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1.28
-      objectReference: {fileID: 0}
-    - target: {fileID: 61143386374277672, guid: 65a6985845398684aa22e569615f09da,
-        type: 2}
-      propertyPath: m_Size.x
-      value: 1.38
-      objectReference: {fileID: 0}
-    - target: {fileID: 61143386374277672, guid: 65a6985845398684aa22e569615f09da,
-        type: 2}
-      propertyPath: m_Size.y
-      value: 1.45
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 65a6985845398684aa22e569615f09da, type: 2}
   m_IsPrefabParent: 0

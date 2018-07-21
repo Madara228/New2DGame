@@ -19,10 +19,4 @@ public class EnemyEngine : MonoBehaviour {
 	void Update () {
 		transform.position = Vector2.MoveTowards(transform.position,new Vector2(350,transform.position.y),speed*Time.deltaTime);
 	}
-	void OnCollisionEnter2D(Collision2D other) {
-		Debug.Log(other);
-		if(other.gameObject.tag == "Player"){
-			Debug.Log("gege");
-		}
-	}
 }
