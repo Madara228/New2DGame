@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+
+
 public class CollisionDetector : MonoBehaviour {
 	public Text health_text;
+	public GameObject lose_txt;
 	private int health = 5;
 	void Start(){
 		health_text.text = health.ToString();
@@ -26,6 +29,7 @@ public class CollisionDetector : MonoBehaviour {
 		}
 	}
 	private IEnumerator checker(){
+		lose_txt.SetActive(true);
 		yield return new WaitForSeconds(3f);
 		SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 	}

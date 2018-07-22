@@ -17,13 +17,12 @@ public class RayCastScript : MonoBehaviour
 	}
 	void Update()
 	{	
+		#if UNITY_ANDROID
+		Debug.Log("ANDROID");
 		if( Input.touchCount >0 )
 		{
 			Debug.Log(Input.GetTouch(0).position);
-		}
-		if (Input.GetMouseButtonDown(0))
-		{
-        	Ray ray = camera.ScreenPointToRay(Input.mousePosition);
+			Ray ray = camera.ScreenPointToRay(Input.GetTouch(0).position);
 			RaycastHit2D hit = Physics2D.Raycast(ray.origin,ray.direction);
 			if(hit!=null)	
 			{
@@ -33,9 +32,29 @@ public class RayCastScript : MonoBehaviour
 				Destroy(hit.transform.gameObject);
 				score +=2;
 				scoreText.text = score.ToString();
-				
+				}
 			}
 		}
+		#endif
+		#if UNITY_EDITOR
+		Debug.Log("Unity");
+		if (Input.GetMouseButtonDown(0))
+		{
+        	Ray ray_pc = camera.ScreenPointToRay(Input.mousePosition);
+			RaycastHit2D hit_pc = Physics2D.Raycast(ray_pc.origin,ray_pc.direction);
+			if(hit_pc!=null)	
+			{
+				if(hit_pc.collider.gameObject.tag == "Enemy")
+				{
+				Debug.DrawLine(ray_pc.origin,hit_pc.point);
+				Destroy(hit_pc.transform.gameObject);
+				score +=2;
+				scoreText.text = score.ToString();
+				
+				}
+			}
+		}
+		#endif
+		}
 	}
-}
-}
+
