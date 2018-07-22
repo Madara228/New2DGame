@@ -31,17 +31,11 @@ public class RayCastScript : MonoBehaviour
 				{
 				Debug.DrawLine(ray.origin,hit.point);
 				Destroy(hit.transform.gameObject);
-				randomInstance.n -= 0.05f;
 				score +=2;
 				scoreText.text = score.ToString();
-					if(randomInstance.n < 0.4f)
-					{
-						randomInstance.n += 0.3f;
-					}
-				}
 				
 			}
 		}
 	}
 }
-
+}

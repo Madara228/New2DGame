@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RandomInstance : MonoBehaviour {
 	public Vector3 size,position;
-	public float n = 1f;
+	private float n = 0.3f;
 	public GameObject enemPref;
 	void Start () {
 		StartCoroutine(spawner());
@@ -16,12 +16,18 @@ public class RandomInstance : MonoBehaviour {
 		Gizmos.DrawCube(position,size);
 	}
 
-	IEnumerator spawner(){
-		while(true){
-		yield return new WaitForSeconds(n);
+	IEnumerator spawner()
+	{
+		while(true)
+		{
+			yield return new WaitForSeconds(n);
+				spawn();
+		}
+	}
+
+	void spawn(){
 		Vector3 pos = new Vector3(Random.Range(-size.x/2,size.x/2),Random.Range(-size.y/2,size.y/2),size.z);
 		Instantiate(enemPref,pos,Quaternion.identity);
-		}
 	}
 	
 }
