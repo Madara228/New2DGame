@@ -5,18 +5,17 @@ using UnityEngine;
 public class EnemyEngine : MonoBehaviour {
 
 	public Transform wall;
-	/// <summary>
-	/// Start is called on the frame when a script is enabled just before
-	/// any of the Update methods is called the first time.
-	/// </summary>
 	private float speed;
+	private Rigidbody2D rb;
 	void Start()
 	{
-		speed = Random.Range(130f,140f);
+		rb = GetComponent<Rigidbody2D>();
+		speed = Random.Range(140f,150f);
 		GameObject wall_gobj = GameObject.Find("Wall");
 		wall = wall_gobj.GetComponent<Transform>();
 	}
 	void Update () {
+	//	rb.AddForce(wall.position.normalized*speed);
 		transform.position = Vector2.MoveTowards(transform.position,new Vector2(350,transform.position.y),speed*Time.deltaTime);
 	}
 }
