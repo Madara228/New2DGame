@@ -12,7 +12,7 @@ public class EnemyEngine : MonoBehaviour {
 	private float speed;
 	void Start()
 	{
-		speed = Random.Range(170f,200f);
+		speed = Random.Range(130f,140f);
 		GameObject wall_gobj = GameObject.Find("Wall");
 		wall = wall_gobj.GetComponent<Transform>();
 	}

@@ -46,15 +46,14 @@ public class RayCastScript : MonoBehaviour
 			{
 				if(hit_pc.collider.gameObject.tag == "Enemy")
 				{
-				Debug.DrawLine(ray_pc.origin,hit_pc.point);
-				Destroy(hit_pc.transform.gameObject);
-				score +=2;
-				scoreText.text = score.ToString();
-				
+					Debug.DrawLine(ray_pc.origin,hit_pc.point, new Color(198,29,38,1));
+					Destroy(hit_pc.transform.gameObject);
+					score +=2;	
 				}
+					scoreText.text = score.ToString();
 			}
 		}
-		#endif
-		}
 	}
+		#endif
+}
 
