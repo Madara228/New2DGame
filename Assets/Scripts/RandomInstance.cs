@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RandomInstance : MonoBehaviour {
 	public Vector3 size,position;
-	private float n = 0.4f;
+	private float n = 0.5f;
 	public GameObject enemPref;
 	void Start () {
 		StartCoroutine(spawner());

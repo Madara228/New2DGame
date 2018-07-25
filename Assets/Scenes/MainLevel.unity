@@ -410,8 +410,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d197577400853f74ea861c7cf233aa5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  size: {x: 130, y: 155, z: 0}
-  position: {x: -191.5, y: -5, z: 0}
+  size: {x: 130, y: 120, z: 0}
+  position: {x: -151, y: 4.89, z: 0}
   enemPref: {fileID: 1653739330634180, guid: db2d3814f730bb14da8f386750497d60, type: 2}
 --- !u!1 &552110493
 GameObject:
@@ -811,11 +811,6 @@ Prefab:
       propertyPath: wall
       value: 
       objectReference: {fileID: 693673233}
-    - target: {fileID: 50343901170527276, guid: db2d3814f730bb14da8f386750497d60,
-        type: 2}
-      propertyPath: m_BodyType
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: db2d3814f730bb14da8f386750497d60, type: 2}
   m_IsPrefabParent: 0
@@ -5761,13 +5756,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1795164668}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 125, y: 80, z: -320}
+  m_LocalRotation: {x: 0, y: -0.07219377, z: 0, w: 0.9973907}
+  m_LocalPosition: {x: 157.4, y: 80, z: -274}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -8.28, z: 0}
 --- !u!114 &1795164673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6086,6 +6081,26 @@ Prefab:
     - target: {fileID: 1180646718366616, guid: 7cb5b775d60df9b44bfcdc16347bf93f, type: 2}
       propertyPath: m_TagString
       value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 212942401557282196, guid: 7cb5b775d60df9b44bfcdc16347bf93f,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 0.9529412
+      objectReference: {fileID: 0}
+    - target: {fileID: 212942401557282196, guid: 7cb5b775d60df9b44bfcdc16347bf93f,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 0.91764706
+      objectReference: {fileID: 0}
+    - target: {fileID: 212942401557282196, guid: 7cb5b775d60df9b44bfcdc16347bf93f,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 0.12415449
+      objectReference: {fileID: 0}
+    - target: {fileID: 212942401557282196, guid: 7cb5b775d60df9b44bfcdc16347bf93f,
+        type: 2}
+      propertyPath: m_Color.a
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7cb5b775d60df9b44bfcdc16347bf93f, type: 2}

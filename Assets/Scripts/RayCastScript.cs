@@ -48,9 +48,9 @@ public class RayCastScript : MonoBehaviour
 				{
 					Debug.DrawLine(ray_pc.origin,hit_pc.point, new Color(198,29,38,1));
 					Destroy(hit_pc.transform.gameObject);
-					score +=2;	
-				}
+					score +=2;
 					scoreText.text = score.ToString();
+				}
 			}
 		}
 	}
